@@ -1,0 +1,11 @@
+html
+    head
+        title signup
+    body
+        h1 Please SignUp
+        if (message)
+            h4 #{message}
+            form(action = "/signup" method = "POST")
+                input(name = "id" type = "text" required placeholder = "User ID")
+                input(name = "password" type = "text" required placeholder = "Password")
+                button(type = "Submit") Sign me up!
